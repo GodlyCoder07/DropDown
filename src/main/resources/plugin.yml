@@ -1,0 +1,14 @@
+name: DropDown
+author: GodlyCoder
+main: me.godlycoder.dropdown.DropDown
+version: 0.0.1 - Beta
+
+commands:
+  start:
+    description: start game
+
+  create:
+    description: create game
+
+  join:
+    description: join a game
