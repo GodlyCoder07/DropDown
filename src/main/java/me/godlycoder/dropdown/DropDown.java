@@ -3,6 +3,7 @@ package me.godlycoder.dropdown;
 import lombok.Getter;
 import me.godlycoder.dropdown.game.Game;
 import me.godlycoder.dropdown.game.GameManager;
+import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -29,6 +30,8 @@ public class DropDown extends JavaPlugin implements Listener {
         
         gameManager = new GameManager(this);
         this.game = gameManager.createGame(); // TEST
+        
+        Bukkit.getPluginManager().registerEvents(this, this);
     }
 
     @Override
